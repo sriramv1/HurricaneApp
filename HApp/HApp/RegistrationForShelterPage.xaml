@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HApp.RegistrationForShelterPage">
+    
+        <StackLayout>
+            <Label Text="Registration"
+                HorizontalOptions="CenterAndExpand" 
+                   Margin="0,15,0,15"/>
+            
+        <Grid x:Name="grdRegistrationPart1"
+              Margin="15,0,15,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Row="0" Grid.Column="0" Placeholder="First Name"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="1" Grid.Column="0" Placeholder="Gender"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="2" Grid.Column="0" Placeholder="Current Address"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="3" Grid.Column="0" Placeholder="Primary Language"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="4" Grid.Column="0" Placeholder="Phone"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="5" Grid.Column="0" Placeholder="#Pets"
+                   HorizontalTextAlignment="Center"/>
+            
+            <Entry Grid.Row="0" Grid.Column="1" Placeholder="Last Name"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="1" Grid.Column="1" Placeholder="#Family Members"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="2" Grid.Column="1" Placeholder="Post disaster addr"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="3" Grid.Column="1" Placeholder="Mode of travel"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="4" Grid.Column="1" Placeholder="Email"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="5" Grid.Column="1" Placeholder="Special Assistance"
+                   HorizontalTextAlignment="Center"/>
+        </Grid>
+        <Label Text="Family and Friends"
+                HorizontalOptions="CenterAndExpand" 
+               TextColor="Gray"
+                   Margin="0,15,0,15"/>
+        <Grid x:Name="grdRegistrationPart2"
+               Margin="15,0,15,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.75*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Row="0" Grid.Column="0" 
+                   Placeholder="First Name"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="1" Grid.Column="0" 
+                   Placeholder="First Name"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="2" Grid.Column="0" 
+                   Placeholder="First Name"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="0" Grid.Column="1" 
+                   Placeholder="Last Name"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="1" Grid.Column="1" 
+                   Placeholder="Last Name"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="2" Grid.Column="1" 
+                   Placeholder="Last Name"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="0" Grid.Column="2" 
+                   Placeholder="Age"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="1" Grid.Column="2" 
+                   Placeholder="Age"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="2" Grid.Column="2" 
+                   Placeholder="Age"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="0" Grid.Column="3" 
+                   Placeholder="Gender"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="1" Grid.Column="3" 
+                   Placeholder="Gender"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="2" Grid.Column="3" 
+                   Placeholder="Gender"
+                   HorizontalTextAlignment="Center"/>
+            <Button Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"
+                    Text="Add Person"
+                    Image="ic_add_circle"
+                />
+        </Grid>
+        <Grid x:Name="grdRegistrationPart3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        
+        <Button Grid.Column="0" Grid.Row="0"
+                    Text="      Register    "
+                BorderColor="#6DFD9C"
+                BackgroundColor="#6DFD9C"
+                TextColor="Black"
+                HorizontalOptions="CenterAndExpand"
+                />
+        <Button Grid.Column="1" Grid.Row="0"
+                    Text="      Cancel    "
+                BackgroundColor="#FD996B"
+                TextColor="Black"
+                HorizontalOptions="CenterAndExpand"
+                />
+        </Grid>
+    </StackLayout>
+    
+</ContentPage>

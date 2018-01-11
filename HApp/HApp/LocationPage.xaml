@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Location"
+             Icon="ic_location_on"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="HApp.LocationPage">
+    
+        <StackLayout>
+            <!--<Label Text="Welcome to Location Page"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />-->
+        <!--<maps:Map
+            x:Name="MyLocationMap"
+            HeightRequest="480"
+            WidthRequest="480"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            IsEnabled="True"
+            IsVisible="True"
+            MapType="Hybrid"
+            HasScrollEnabled="True"
+            HasZoomEnabled="True"
+                />-->
+    </StackLayout>
+    
+</ContentPage>

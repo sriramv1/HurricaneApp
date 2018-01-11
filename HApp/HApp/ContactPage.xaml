@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Contact"
+             Icon="ic_chat"
+             x:Class="HApp.ContactPage">
+    
+        <StackLayout Spacing="10" Padding="10">
+        <StackLayout>
+            <Label Text="Shelters Nearby"
+                   FontSize="24"
+                HorizontalOptions="CenterAndExpand" />
+            <!--Binding data can be done from here also-->
+            
+            <ListView x:Name="listShelters" ItemsSource="{Binding Shelters}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<TextCell 
+                    Text="{Binding ShelterName}"
+                    TextColor="Purple"
+                    Detail="{Binding PhoneNo}"
+                    DetailColor="Maroon"/>-->
+                        <ImageCell 
+                    Text="{Binding ShelterName}"
+                    TextColor="Black"
+                    Detail="{Binding PhoneNo}"
+                    DetailColor="Gray"
+                    ImageSource="{Binding ImageUrl}"
+                    />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--<ListView x:Name="listShelters2" ItemsSource="{Binding Shelters}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        --><!--<TextCell 
+                        Text="{Binding ShelterName}"
+                        TextColor="Purple"
+                        Detail="{Binding PhoneNo}"
+                        DetailColor="Maroon"/>--><!--
+                        <ImageCell 
+                        Text="{Binding ShelterName}"
+                        TextColor="Black"
+                        Detail="{Binding PhoneNo}"
+                        DetailColor="Gray"
+                        ImageSource="{Binding ImageUrl}"
+                        />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+
+        </StackLayout>
+            
+        <Button x:Name="btnRegisterForShelter"
+                Text="  Register For Shelter  "
+                Clicked="btnRegisterForShelter_Clicked"
+                VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    BorderColor="LightGreen"
+                BackgroundColor="LightGreen"
+                TextColor="Black"
+                />
+    </StackLayout>
+    
+</ContentPage>
